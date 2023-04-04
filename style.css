@@ -191,6 +191,10 @@ nav {
   display: none;
 }
 
+.card:hover .hidden-tag {
+  display: block;
+}
+
 .hidden-tag h1 {
   font-size: 35px;
   font-weight: var(--fw-500);
