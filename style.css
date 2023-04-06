@@ -20,22 +20,22 @@
 
 @font-face {
   font-family: "PP Neue Montreal medium";
-  src: url("/openfont/PPNeueMontreal-Medium.otf");
+  src: url("openfont/PPNeueMontreal-Medium.otf");
 }
 
 @font-face {
   font-family: "PP Neue Montreal book";
-  src: url("/openfont/PPNeueMontreal-Book.otf");
+  src: url("openfont/PPNeueMontreal-Book.otf");
 }
 
 @font-face {
   font-family: "PP Neue Montreal bold";
-  src: url("/openfont/PPNeueMontreal-Bold.otf");
+  src: url("openfont/PPNeueMontreal-Bold.otf");
 }
 
 @font-face {
   font-family: "PP Neue Montreal";
-  src: url("/openfont/PPNeueMontreal-Thin.otf");
+  src: url("openfont/PPNeueMontreal-Thin.otf");
 }
 
 @media (max-width: 50em) {
@@ -164,6 +164,7 @@ nav {
   display: none;
   position: relative;
   border: none;
+  background-color: #fff;
 }
 
 .mobile-nav-toggle img {
@@ -199,6 +200,24 @@ nav {
     padding: 0 1rem;
   }
 
+  header {
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  nav {
+    padding: 1.5rem 1rem;
+  }
+
+  nav p:first-of-type a {
+    color: #000;
+    border: none;
+    letter-spacing: 0.05rem;
+  }
+
   .mobile-nav-toggle {
     display: block;
     padding: 0.3rem 0.3rem;
@@ -208,11 +227,11 @@ nav {
     display: none;
 
     position: absolute;
-    top: 10rem;
+    top: 5rem;
     background-color: #000;
     width: 100%;
     padding: 1rem 0;
-    margin: auto;
+    left: 0;
     text-align: center;
   }
 
@@ -223,6 +242,11 @@ nav {
 
   .primary-navigation[data-visible] {
     display: block;
+  }
+
+  .about {
+    margin-top: 4.5rem;
+    padding: 5rem 0;
   }
 
   .two-columns {
