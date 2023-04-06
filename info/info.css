@@ -5,21 +5,38 @@
   --bg-color: var(--clr-neutral-400);
   --txt-color: var(--clr-neutral-100);
 
-  --fw-400: 400;
-  --fw-500: 500;
-  --fw-700: 700;
+  --ff-100: "PP Neue Montreal";
+  --ff-200: "PP Neue Montreal book";
+  --ff-300: "PP Neue Montreal medium";
+  --ff-400: "PP Neue Montreal bold";
 
-  --fw-primary: var(--fw-500);
-  --fw-paragraph: var(--fw-400);
-  --fw-name: var(--fw-700);
-
-  --fs-100: 1rem;
-  --fs-200: 1.125rem;
-  --fs-300: 1.375rem;
-  --fs-400: 1.875rem;
-  --fs-500: 2.5rem;
-  --fs-900: 4.375rem;
+  --fs-100: 1.125rem;
+  --fs-200: 1.25rem;
+  --fs-300: 1.5625rem;
+  --fs-400: 2.5rem;
+  --fs-500: 3.125rem;
+  --fs-900: 5.625rem;
   --fs-1000: 5rem;
+}
+
+@font-face {
+  font-family: "PP Neue Montreal medium";
+  src: url("/openfont/PPNeueMontreal-Medium.otf");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal book";
+  src: url("/openfont/PPNeueMontreal-Book.otf");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal bold";
+  src: url("/openfont/PPNeueMontreal-Bold.otf");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("/openfont/PPNeueMontreal-Thin.otf");
 }
 
 @media (max-width: 50em) {
@@ -71,10 +88,11 @@ body {
 }
 /* Set core body defaults */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "PP Neue Montreal";
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   color: var(--txt-color);
+  font-size: var(--fs-200);
 }
 
 /* A elements that don't have a class get default styles */
@@ -122,19 +140,19 @@ svg {
 }
 
 h1 {
-  font-size: var(--fs-1000);
+  font-family: var(--ff-300);
+  font-size: var(--fs-900);
   line-height: 90px;
-  font-weight: var(--fw-500);
 }
 
 h2 {
+  font-family: var(--ff-300);
   font-size: var(--fs-500);
-  font-weight: var(--fw-500);
 }
 
 h3 {
+  font-family: var(--ff-300);
   font-size: var(--fs-300);
-  font-weight: var(--fw-500);
 }
 
 body {
@@ -154,6 +172,7 @@ main {
 }
 
 nav {
+  font-family: var(--ff-300);
   display: flex;
   justify-content: space-between;
   padding: 5rem 0;
@@ -194,6 +213,11 @@ article p {
   display: flex;
   gap: 40%;
   margin: 2rem 0;
+  line-height: 2rem;
+}
+
+.process {
+  gap: 41%;
 }
 
 @media (max-width: 50em) {
@@ -231,6 +255,7 @@ article p {
   .two-columns {
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
     margin: 2rem 0;
   }
 
@@ -256,6 +281,14 @@ article p {
   .connect {
     font-size: var(--fs-300);
   }
+
+  figure .picture-tag {
+    font-size: var(--fs-300);
+    line-height: 2rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 2.5rem;
+  }
 }
 
 figure {
@@ -263,21 +296,32 @@ figure {
   position: relative;
 }
 
+figure img {
+  max-height: 39.0881rem;
+}
+
 .picture-tag {
-  font-size: var(--fs-200);
-  font-weight: var(--fw-400);
+  font-size: var(--fs-300);
+  line-height: 2rem;
   position: absolute;
-  bottom: 2rem;
-  left: 2rem;
+  bottom: 3.5rem;
+  left: 2.5rem;
+}
+
+.picture-tag h3 {
+  font-family: var(--ff-400);
 }
 
 .connect {
+  font-family: var(--ff-300);
   font-size: var(--fs-500);
   text-align: center;
   padding: 5rem 0;
 }
 
 .footer {
+  font-family: var(--ff-200);
+  line-height: 1.7rem;
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
