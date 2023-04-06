@@ -268,8 +268,10 @@ nav {
     align-items: flex-start;
   }
 
-  .connect {
-    font-size: var(--fs-300);
+  .container .connect {
+    font-size: var(--fs-500);
+    padding-top: 2.1875rem;
+    padding-bottom: 3.6875rem;
   }
 }
 
