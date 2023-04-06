@@ -21,22 +21,22 @@
 
 @font-face {
   font-family: "PP Neue Montreal medium";
-  src: url("/openfont/PPNeueMontreal-Medium.otf");
+  src: url("../openfont/PPNeueMontreal-Medium.otf");
 }
 
 @font-face {
   font-family: "PP Neue Montreal book";
-  src: url("/openfont/PPNeueMontreal-Book.otf");
+  src: url("../openfont/PPNeueMontreal-Book.otf");
 }
 
 @font-face {
   font-family: "PP Neue Montreal bold";
-  src: url("/openfont/PPNeueMontreal-Bold.otf");
+  src: url("../openfont/PPNeueMontreal-Bold.otf");
 }
 
 @font-face {
   font-family: "PP Neue Montreal";
-  src: url("/openfont/PPNeueMontreal-Thin.otf");
+  src: url("../openfont/PPNeueMontreal-Thin.otf");
 }
 
 @media (max-width: 50em) {
@@ -89,6 +89,7 @@ body {
 /* Set core body defaults */
 body {
   font-family: "PP Neue Montreal";
+  letter-spacing: 1px;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   color: var(--txt-color);
@@ -106,7 +107,7 @@ picture,
 svg {
   max-width: 100%;
   display: block;
-  border-radius: 20px;
+  border-radius: 17px;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -161,12 +162,12 @@ body {
 
 main {
   background-color: var(--bg-color);
-  max-width: 1400px;
+  max-width: 1425px;
   margin: auto;
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1295px;
   margin: auto;
   padding: 0 1rem;
 }
@@ -175,9 +176,8 @@ nav {
   font-family: var(--ff-300);
   display: flex;
   justify-content: space-between;
-  padding: 5rem 0;
+  padding: 4.0625rem 0;
   font-size: var(--fs-200);
-  font-weight: var(--fw-500);
   position: relative;
 }
 
@@ -212,7 +212,7 @@ article p {
 .two-columns {
   display: flex;
   gap: 40%;
-  margin: 2rem 0;
+  margin: 2.7rem 0;
   line-height: 2rem;
 }
 
@@ -256,7 +256,7 @@ article p {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin: 2rem 0;
+    margin: 2.7rem 0;
   }
 
   .container {
@@ -316,7 +316,8 @@ figure img {
   font-family: var(--ff-300);
   font-size: var(--fs-500);
   text-align: center;
-  padding: 5rem 0;
+  padding-top: 9.1875rem;
+  padding-bottom: 12.6875rem;
 }
 
 .footer {
@@ -324,10 +325,9 @@ figure img {
   line-height: 1.7rem;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   gap: 1.2rem;
   margin-top: 2rem;
-  padding-bottom: 10rem;
+  padding-bottom: 7.8125rem;
   max-width: 1240px;
   font-size: var(--fs-200);
 }
