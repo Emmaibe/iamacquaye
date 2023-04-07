@@ -187,16 +187,11 @@ nav {
   position: relative;
   border: none;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .mobile-nav-toggle img {
   border-radius: 0;
-}
-
-.icon-close {
-  position: absolute;
-  inset: 0;
-  display: none;
 }
 
 section {
@@ -244,7 +239,19 @@ article p {
 
   .mobile-nav-toggle {
     display: block;
-    padding: 0.3rem 0.3rem;
+    padding: 0rem 0.3rem;
+  }
+
+  .icon-hamburger[data-invisible] {
+    display: none;
+  }
+
+  .icon-close {
+    display: none;
+  }
+
+  .icon-close[data-visible] {
+    display: block;
   }
 
   .primary-navigation {
