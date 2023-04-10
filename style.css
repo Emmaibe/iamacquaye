@@ -299,7 +299,7 @@ nav {
   display: none;
 }
 
-.card:hover .hidden-tag {
+.card-container:hover .hidden-tag {
   display: block;
 }
 
@@ -308,7 +308,7 @@ nav {
   font-size: 35px;
 }
 
-.card img:hover {
+.card-container:hover .card-img {
   mix-blend-mode: overlay;
 }
 
