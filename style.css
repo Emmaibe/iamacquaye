@@ -196,7 +196,7 @@ nav {
   }
 
   header {
-    background-color: #fff;
+    background-color: var(--bg-color);
     position: absolute;
     width: 100%;
     top: 0;
@@ -205,36 +205,49 @@ nav {
 
   nav {
     padding: 1.5rem 1rem;
+    align-items: center;
   }
 
   nav p:first-of-type a {
-    color: #000;
+    color: var(--clr-neutral-100);
     border: none;
     letter-spacing: 0.05rem;
+  }
+
+  nav p:first-of-type a:hover {
+    border: none;
   }
 
   .mobile-nav-toggle {
     display: block;
     padding: 0rem 0.3rem;
+    background-color: var(--bg-color);
+  }
+
+  .icon-hamburger {
+    width: 3rem;
+    height: 3rem;
   }
 
   .icon-hamburger[data-invisible] {
-    display: none;
+    /* display: none; */
+    transform: rotate(-90deg);
+    transition: 0.3s;
   }
 
   .icon-close {
     display: none;
   }
 
-  .icon-close[data-visible] {
+  /* .icon-close[data-visible] {
     display: block;
-  }
+  } */
 
   .primary-navigation {
     display: none;
 
     position: absolute;
-    top: 5rem;
+    top: 6rem;
     background-color: #000;
     width: 100%;
     padding: 1rem 0;
@@ -252,7 +265,7 @@ nav {
   }
 
   .about {
-    margin-top: 4.5rem;
+    margin-top: 5.8rem;
     padding: 5rem 0;
   }
 

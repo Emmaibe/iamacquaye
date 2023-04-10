@@ -1,5 +1,5 @@
 const iconHamburger = document.querySelector(".icon-hamburger");
-const iconClose = document.querySelector(".icon-close");
+// const iconClose = document.querySelector(".icon-close");
 const navToggle = document.querySelector(".mobile-nav-toggle");
 const primaryNav = document.querySelector(".primary-navigation");
 
@@ -9,5 +9,5 @@ navToggle.addEventListener("click", () => {
     : navToggle.setAttribute("aria-expanded", true);
   primaryNav.toggleAttribute("data-visible");
   iconHamburger.toggleAttribute("data-invisible");
-  iconClose.toggleAttribute("data-visible");
+  // iconClose.toggleAttribute("data-visible");
 });
