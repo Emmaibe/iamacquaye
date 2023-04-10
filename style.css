@@ -160,6 +160,10 @@ nav {
   position: relative;
 }
 
+nav p:first-of-type a:hover {
+  border: none;
+}
+
 .mobile-nav-toggle {
   display: none;
   position: relative;
@@ -212,10 +216,6 @@ nav {
     color: var(--clr-neutral-100);
     border: none;
     letter-spacing: 0.05rem;
-  }
-
-  nav p:first-of-type a:hover {
-    border: none;
   }
 
   .mobile-nav-toggle {
