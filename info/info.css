@@ -91,7 +91,7 @@ body {
   font-family: "PP Neue Montreal";
   letter-spacing: 1px;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 10px;
   color: var(--txt-color);
   font-size: var(--fs-200);
 }
@@ -143,7 +143,7 @@ svg {
 h1 {
   font-family: var(--ff-300);
   font-size: var(--fs-900);
-  line-height: 90px;
+  line-height: 70px;
 }
 
 h2 {
@@ -196,11 +196,12 @@ nav {
 
 section {
   max-width: 50rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 10rem;
 }
 
 article {
-  padding: 2rem 0;
+  padding: 2rem 0 10rem 0;
 }
 
 article p {
@@ -324,7 +325,7 @@ article p {
 
   figure .picture-tag {
     font-size: var(--fs-100);
-    line-height: 1.5rem;
+    line-height: 0.8rem;
     position: absolute;
     bottom: 0.5rem;
     left: 1rem;
@@ -342,7 +343,7 @@ figure img {
 
 .picture-tag {
   font-size: var(--fs-300);
-  line-height: 2rem;
+  line-height: 1rem;
   position: absolute;
   bottom: 3.5rem;
   left: 2.5rem;
