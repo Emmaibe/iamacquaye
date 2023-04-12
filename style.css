@@ -16,6 +16,7 @@
   --fs-400: 2.5rem;
   --fs-500: 3.125rem;
   --fs-900: 5.625rem;
+  --fs-1500: 9.375rem;
 }
 
 @font-face {
@@ -46,6 +47,7 @@
     --fs-400: 1.875rem;
     --fs-500: 2.5rem;
     --fs-900: 4.375rem;
+    --fs-1500: 5.375rem;
   }
 }
 
@@ -272,7 +274,8 @@ nav p:first-of-type a:hover {
   .two-columns {
     display: flex;
     flex-direction: column;
-    margin: 2.7rem 0;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
   }
 
   .footer {
@@ -307,8 +310,8 @@ nav p:first-of-type a:hover {
 .hidden-tag {
   font-size: var(--fs-100);
   position: absolute;
-  bottom: 6rem;
-  left: 2.6rem;
+  bottom: 3rem;
+  left: 2.7rem;
   display: none;
 }
 
@@ -329,6 +332,33 @@ nav p:first-of-type a:hover {
   font-family: var(--ff-300);
   margin-top: 1.5rem;
   font-size: var(--fs-300);
+}
+
+.showreel-container {
+  display: flex;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* .showreel {
+  transform: translateX(100%);
+  transition: transform 275ms ease;
+} */
+
+.showreel a {
+  font-family: var(--ff-300);
+  font-size: var(--fs-1500);
+  color: #ffffff;
+  opacity: 0.3;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.showreel a:hover {
+  color: aqua;
+  border: none;
 }
 
 .connect {
