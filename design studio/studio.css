@@ -1,0 +1,318 @@
+:root {
+  --clr-neutral-100: #fff;
+  --clr-neutral-400: #202020;
+
+  --bg-color: var(--clr-neutral-400);
+  --txt-color: var(--clr-neutral-100);
+
+  --ff-100: "PP Neue Montreal";
+  --ff-200: "PP Neue Montreal book";
+  --ff-300: "PP Neue Montreal medium";
+  --ff-400: "PP Neue Montreal bold";
+
+  --fs-100: 1rem;
+  --fs-200: 1.25rem;
+  --fs-300: 1.5625rem;
+  --fs-400: 2.5rem;
+  --fs-500: 3.125rem;
+  --fs-900: 5.625rem;
+  --fs-2600: 16.25rem;
+}
+
+@font-face {
+  font-family: "PP Neue Montreal medium";
+  src: url("../openfont/PPNeueMontreal-Medium.otf");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal book";
+  src: url("../openfont/PPNeueMontreal-Book.otf");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal bold";
+  src: url("../openfont/PPNeueMontreal-Bold.otf");
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("../openfont/PPNeueMontreal-Thin.otf");
+}
+
+@media (max-width: 50em) {
+  :root {
+    --fs-100: 0.9375rem;
+    --fs-200: 1.125rem;
+    --fs-300: 1.375rem;
+    --fs-400: 1.875rem;
+    --fs-500: 2.5rem;
+    --fs-900: 4.375rem;
+    --fs-2600: 7.375rem;
+  }
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  text-decoration: none;
+  color: var(--clr-neutral-100);
+  list-style-type: none;
+}
+
+a:hover {
+  border-bottom: 2px solid #8b8686;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100vh;
+}
+/* Set core body defaults */
+body {
+  font-family: "PP Neue Montreal";
+  letter-spacing: 1px;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  color: var(--txt-color);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+  /* border-radius: 17px; */
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+main {
+  background-color: var(--bg-color);
+  max-width: 1425px;
+  margin: auto;
+}
+
+.container {
+  max-width: 1295px;
+  margin: auto;
+  padding: 0 1rem;
+  height: 100vh;
+  overflow: hidden;
+}
+
+nav {
+  font-family: var(--ff-300);
+  display: flex;
+  justify-content: space-between;
+  padding: 4.0625rem 0;
+  font-size: var(--fs-200);
+  position: relative;
+}
+
+nav p:first-of-type a:hover {
+  border: none;
+}
+
+.mobile-nav-toggle {
+  display: none;
+  position: relative;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.mobile-nav-toggle img {
+  border-radius: 0;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+  margin: 4.7rem 0;
+}
+
+@media (max-width: 50em) {
+  .container {
+    max-width: 39em;
+    margin: auto;
+    padding: 0 1rem;
+    overflow: scroll;
+  }
+
+  header {
+    background-color: var(--bg-color);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  nav {
+    padding: 1.5rem 1rem;
+    align-items: center;
+  }
+
+  nav p:first-of-type a {
+    color: var(--clr-neutral-100);
+    border: none;
+    letter-spacing: 0.05rem;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    padding: 0rem 0.3rem;
+    background-color: var(--bg-color);
+  }
+
+  .icon-hamburger {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .icon-hamburger[data-invisible] {
+    /* display: none; */
+    transform: rotate(-90deg);
+    transition: 0.3s;
+  }
+
+  .icon-close {
+    display: none;
+  }
+
+  .primary-navigation {
+    display: none;
+
+    position: absolute;
+    top: 6rem;
+    background-color: #000;
+    width: 100%;
+    padding: 1rem 0;
+    left: 0;
+    text-align: center;
+  }
+
+  .primary-navigation a {
+    color: var(--clr-neutral-100);
+    font-weight: var(--fw-500);
+  }
+
+  .primary-navigation[data-visible] {
+    display: block;
+  }
+
+  .two-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 10.5rem;
+  }
+
+  .large-font {
+    letter-spacing: -11.5px;
+    margin-top: 1rem;
+  }
+}
+
+/* utility class */
+
+.fs-100 {
+  font-size: var(--fs-100);
+}
+
+.fs-2600 {
+  font-size: var(--fs-2600);
+}
+
+.ff-100 {
+  font-family: var(--ff-100);
+}
+
+.ff-200 {
+  font-family: var(--ff-200);
+}
+
+.ff-300 {
+  font-family: var(--ff-300);
+}
+
+.write-up {
+  max-width: 17.875rem;
+}
+
+.write-up p {
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.renee-img img {
+  width: 614px;
+  height: 345px;
+}
+
+.large-font {
+  max-width: 17.875rem;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 2rem; */
+  letter-spacing: -11.5px;
+  margin-top: 6.5rem;
+}
+
+/* .large-font h1 {
+   */
