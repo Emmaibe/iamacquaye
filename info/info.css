@@ -91,7 +91,7 @@ body {
   font-family: "PP Neue Montreal";
   letter-spacing: 1px;
   text-rendering: optimizeSpeed;
-  line-height: 10px;
+  line-height: 1.5;
   color: var(--txt-color);
   font-size: var(--fs-200);
 }
@@ -180,6 +180,10 @@ nav {
   padding: 4.0625rem 0;
   font-size: var(--fs-200);
   position: relative;
+}
+
+.nav p {
+  padding: 10px 0;
 }
 
 nav p:first-of-type a:hover {
