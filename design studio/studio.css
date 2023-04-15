@@ -139,13 +139,13 @@ svg {
 
 body {
   background-color: #000;
-  overflow: hidden;
 }
 
 main {
   background-color: var(--bg-color);
   max-width: 1425px;
   margin: auto;
+  height: 100vh;
 }
 
 .container {
@@ -221,19 +221,18 @@ nav p:first-of-type a:hover {
 }
 
 .large-font {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  letter-spacing: -11.5px;
-  line-height: 70%;
-  margin-top: 5.8rem;
+  position: relative;
+  top: 3rem;
 }
 
-.large-font div {
-  margin-left: -1rem;
+.large-font img {
 }
 
 @media (max-width: 50em) {
+  main {
+    height: 130vh;
+  }
+
   .container {
     max-width: 39em;
     margin: auto;
@@ -300,16 +299,7 @@ nav p:first-of-type a:hover {
   }
 
   .large-font {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    letter-spacing: -4px;
-    line-height: 0.7;
-    margin-top: 0.5rem;
-    padding-bottom: 20px;
-  }
-
-  .large-font div {
-    margin-left: -5px;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
   }
 }
