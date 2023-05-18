@@ -138,12 +138,11 @@ svg {
 }
 
 body {
-  background-color: #000;
+  background-color: var(--bg-color);
 }
 
 main {
-  background-color: var(--bg-color);
-  max-width: 1425px;
+  /* max-width: 1425px; */
   margin: auto;
 }
 
@@ -354,7 +353,8 @@ nav p:first-of-type a:hover {
 }
 
 .carousel-section {
-  border-top: 2px solid #818080;
+  border-top: 4px solid #818080;
+  border-bottom: 4px solid #818080;
 }
 
 .carousel {
@@ -384,9 +384,12 @@ nav p:first-of-type a:hover {
   display: flex;
   justify-content: space-between;
   gap: 1.2rem;
-  padding-bottom: 7.8125rem;
-  max-width: 1240px;
+  /* max-width: 1240px; */
   font-size: var(--fs-200);
+  max-width: 1295px;
+  margin: auto;
+  padding: 0 1rem;
+  padding-bottom: 7.8125rem;
 }
 
 .info {

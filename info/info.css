@@ -163,7 +163,7 @@ body {
 
 main {
   background-color: var(--bg-color);
-  max-width: 1425px;
+  /* max-width: 1425px; */
   margin: auto;
 }
 
