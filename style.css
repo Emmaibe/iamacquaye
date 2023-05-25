@@ -325,8 +325,14 @@ nav p:first-of-type a:hover {
   font-size: 35px;
 }
 
+.card-container {
+  background-color: hsl(0, 0%, 0%);
+  border-radius: 17px;
+}
+
 .card-container:hover .card-img {
-  mix-blend-mode: overlay;
+  /* mix-blend-mode: overlay; */
+  opacity: 0.15;
 }
 
 .card-name {
